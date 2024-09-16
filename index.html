@@ -7,39 +7,56 @@
 		<meta name="Author" content="Гаваньо Дмитро Васильович" />
 		<meta name="Description" content="Web-сторiнка автора." />
 		<title>Web Lab # 1</title>
+
+		<link rel="stylesheet" href="css/mycss.css">
 	</head>
 	<script src="js/myscript.js"></script>
+
 	<body>
-		<h1 align=center>Сторінка автора Webсайту</h1>
+		<div class="nav">
+            <button><a href="index.html">ПРО МЕНЕ</a></button>
+            <button><a href="company.html" class="btn">АПТЕКА</a></button>
+            <button><a href="news.html">NEWS</a></button>
+        </div>	
+		
+		<div class="container">
+			<h1 id="Title">Сторінка автора Webсайту</h1>
+			<hr>
 
-		<h1 title = "rnadom" aling = "center" id = "mainTitle">Про мене</h1>
-			<h5>Я - <cite>Гаваньо Дмитро Васильович</cite>.</h5>
-			<p>Навчаюсь в <strike lang = "en" id = "university" class = "rnadom">Чернівецькому національному університеті ім.Юрія Федьковича</strike></p>
-			<p style = "margin: 100px;" dir = "ltr" aling = "center">Я найкращий програміст у Всесвіті. В майбутньому хочу стати Гейм-девелопером. </p>
-		<hr>
-
-		<h2 aling="center">ЛАСКАВО ПРОСИМО НА МОЮ ДОМАШНЮ СТОРІНКУ!</h2>
-			<h4 lang="uk">Дякую Вам, шановний відвідувач, за те, що
+			<h1 class="subtitle">Про мене</h1>
+	
+			<h5 class="special_text" >Я - <cite>Гаваньо Дмитро Васильович</cite>.</h5>
+			<p class="base_text">Навчаюсь в <span class="text_selection">Чернівецькому національному університеті ім.Юрія Федьковича</strike></p>
+			<p class="quote">Я найкращий програміст у Всесвіті. В майбутньому хочу стати Гейм-девелопером. </p>
+	
+			<hr>
+	
+			<h2 class="subtitle">ЛАСКАВО ПРОСИМО НА МОЮ ДОМАШНЮ СТОРІНКУ!</h2>
+	
+			<p	 class="base_text">
+				Дякую Вам, шановний відвідувач, за те, що
 				Ви знайшли час і можливість заглянути на мою сторінку у Всесвітній мережі. Тут
 				Вашій увазі
 				буде запропонована інформація про мої захоплення, мої біографії, мої друзі, робота
 				та родині. В окремій рубриці я запропоную Вашій увазі кілька власних фотографій.
 				Сподіваюся, вони Вам сподобаються.
-			</h4>		
-			<br title = "idk" class = "rnadom" style = "background-color: green;">
-		<h5 lang ="uk" dir="auto" class="rnadom">На жаль, у даний момент моя домашня сторінка
-			перебуває в стадії розробки, тому ще далеко не всі її розділи доступні для
-			перегляду. Я щиро сподіваюся, що цей <s id = "s__footer" title = "idk2" lang = "en">ресурс</s> буде постійно обновлятися й у
-			найближчому майбутньому багато хто з перерахованих рубрик займуть своє законне
-			місце.
-		</h5>
-
-		<h6 class = "rnadom" lang = "uk" dir = "auto"> <tt class = "rnadom" lang = "uk" dir = "auto">Заходіть на мою сторінку частіше!</tt> </h6>
-		<div style="display: flex; justify-content: space-around; align-items: center;">
-			<button><a href="index.html">ПРО МЕНЕ</a></button>
-			<button><a href="company.html" class="btn">АПТЕКА</a></button>
-			<button><a href="news.html">NEWS</a></button>
-		</div>	</body>
+			</p>
+	
+			<br>
+	
+			<h5 class="subtext">
+				На жаль, у даний момент моя домашня сторінка
+				перебуває в стадії розробки, тому ще далеко не всі її розділи доступні для
+				перегляду. Я щиро сподіваюся, що цей <s id = "s__footer" title = "idk2" lang = "en">ресурс</s> буде постійно обновлятися й у
+				найближчому майбутньому багато хто з перерахованих рубрик займуть своє законне
+				місце.
+			</h5>
+	
+			<h6 class = "special_text">Заходіть на мою сторінку частіше!</tt> </h6>
+			<hr>
+			<br>			<br>			<br>			<br>			<br>			<br>			<br>
+		</div>
+	</body>
 </html>
 
 <!-- Тег: <h5> атрибути - class lang dir , 

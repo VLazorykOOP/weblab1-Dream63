@@ -1,4 +1,255 @@
-h1 {
-  margin: 0; 
-  size: 12; 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d0ff9d;
+  height: 100vh;
 }
+
+.container {
+  background-color: #fff;
+  max-width: 1400px;
+  padding: 30px 50px;
+	margin: 0 auto ;
+	width: 80%;
+}
+
+#Title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.article {
+  margin: 0;
+  text-align: left;
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.base_text {
+  margin: 0;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.special_text {
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  background-color: rgb(254, 255, 192);
+}
+.uncommon_text {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  line-height: 25px;
+  font-family:'Times New Roman', Times, serif;
+  color: #8c8c8c;
+}
+
+.xtra_margin {
+  margin: 20px 0 ;
+}
+
+.quote {
+  margin: 30px;
+  padding: 20px;
+  border: 3px solid rgb(86, 86, 86);
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.text_selection {
+  padding: 0 5px;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.subtext {
+  margin: 20px 10px;
+  padding: 10px;
+  border: 2px solid gray;
+  font-size: 10px;
+  line-height: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dfdfdf;
+}
+
+.news_cell {
+  border: 5px solid rgb(216, 216, 216);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 10px;
+}
+
+.info_container {
+  display: flex;
+  padding: 10px 0;
+  width: 100%;
+  background-color: rgb(141, 192, 125);
+  justify-content: space-around;
+
+}
+.info_container address {
+
+  max-width: 1400px;
+  padding: 30px 50px;
+	margin: 0 auto ;
+	width: 80%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  padding: 10px 0;
+  width: calc(100%);
+  background-color: rgb(141, 192, 125);
+  justify-content: space-around;
+}
+
+.nav button {
+  border: 0;
+  width: 34%;
+  height: 60%;
+  padding: 30px;
+  background-color: rgb(132, 182, 116);
+}
+.nav button a {
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Селектори, псевдокласи та псевдоелементи:
+Селектори - класів, 
+Селектори - ідендифікаторів;
+ Селектори - сусідів, 
+ Селектори - контексний(спадкоємців);
+  Селектори - атрибутів:[attr] , 
+  Селектори - атрибутів:[attr ~=value] , 
+  Селектори - атрибутів:[attr|=value] ; 
+  Псевдокласи::first-child, 
+  Псевдокласи::disabled, 
+  Псевдокласи::not(selector), 
+  Псевдокласи::active , 
+  Псевдокласи::checked, 
+  Псевдокласи::link , 
+  Псевдокласи::empty; 
+  Псевдоелементи ::first-line, 
+  Псевдоелементи ::after; 
+  !important; 
+  Границі, 
+
+  заповнювачі і рамки:
+  margin-left:<розмір>, 
+  margin-left:<процент> , 
+  margin-right:<розмір>, 
+  margin-right:<процент> , 
+  margin-top:<розмір>, 
+  margin-top:<процент> ; 
+  padding-left:<розмір>, 
+  padding: <розмір>, 
+  padding-top:<розмір>; 
+  border-left-width:thin , 
+  border-left-width: <розмір>, 
+  border- top-width:thin ,
+  border-top-width: <розмір>, 
+  border-width:thin , 
+  border-width: <розмір>; 
+  border-color:<колір>, 
+  border-top-color:<колір>, 
+  border-bottom-color:<колір>; 
+  border-left-style:none, 
+  border-left-style: double, 
+  border-left-style: groove, 
+  border-left-style: outset, 
+  border- top-style:none, 
+  border- top-style: double, 
+  border- top-style: groove, 
+  border- top-style: outset, 
+  border-right-style:none, 
+  border-right-style: double, 
+  border-right-style: groove, 
+  border-right-style: outset; 
+
+  Позиціювання елементiв:
+  display: inline, 
+  display: table, 
+  display: table-caption, 
+  display: table-row, 
+  display: run-in, 
+  display: table-footer-group; 
+  position: static, 
+  position: relative; 
+  z-index: auto; 
+  float: left, 
+  float: none; 
+  clear: none, 
+  clear: left;
+   direction: ltr; 
+   unicode-bidi: normal, 
+   unicode-bidi: bidi-override; 
+   Візуалізація елементiв:
+   max-width, 
+   width; 
+   height: <розмір>, 
+   height: <процент>, 
+   min-height: <розмір>, 
+   min-height: <процент>; 
+   line-height: normal, 
+   line-height: <розмір>; 
+   vertical-align: baseline, 
+   vertical-align: bottom, 
+   vertical-align: text-top, 
+   vertical-align: <розмір>; 
+   overflow: visible, 
+   overflow: scroll; 
+   clip: rect(<top>,<right>,<bottom>,<left>); 
+   visibility: visible, 
+   visibility: hidden; 
+   outline-style, outline; 
+   Колір фон:color: <колір>; 
+   background-color: <колір>; 
+   background-image: <uri>; 
+   background-attachment: scroll; 
+   background-position: <розмір> {1,2}, 
+   background-position: left, 
+   background-position: center;
+   */
