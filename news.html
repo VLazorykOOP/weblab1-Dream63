@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Гаваньо Дмитро Васильович">
     <meta name="Description" content="Web-сторiнка автора.">   
-    <title>Web Lab # 1</title>
+    <title>Super website</title>
 
     <link rel="stylesheet" href="css/mycss.css">
 </head>
 <script src="js/myscript.js"></script>
 <body>
-    <div class="nav">
-        <button><a href="index.html">ПРО МЕНЕ</a></button>
-        <button><a href="company.html" class="btn">АПТЕКА</a></button>
-        <button><a href="news.html">NEWS</a></button>
-    </div>	
+
+		<!-- Navigarion menu -->
+		<div class="nav">
+			<a href="index.html">ПРО МЕНЕ</a>
+			<a href="company.html" class="btn">АПТЕКА</a>
+			<a href="news.html">НОВИНИ</a>
+			<a href="lists.html">РЕСУРСИ</a>
+		</div>	
+
+    <!-- Main container -->
     <div class="container">
 
+        <!-- Title -->
         <h2 id="Title"> <strong> Ласкаво просимо на сторінку новин аптеки! </strong> </h2>
-
         <hr>
+
+        <!-- News cells -->
         <section class="news_cell">
             <h2 class="article">Поповнення ресурсів апреки </h2>
             <p> <time datetime="2024-09-01" class="uncommon_text">1 вересня 2024</time> </p>
@@ -31,7 +38,7 @@
 
         <section class="news_cell">
             <h2 class="article">Інновації в онкології </h2>
-            <p> <time datetime="2024-02-01" class="uncommon_text">1 вересня 2024</time> </p>
+            <p> <time datetime="2024-02-01" class="uncommon_text">1 лютого 2024</time> </p>
             <hr>
             <p class="base_text">Розробки в області імунотерапії продовжують радувати. Нові підходи до лікування раку, такі як CAR-T терапія (терапія з використанням Т-клітин, модифікованих для боротьби з раковими клітинами), демонструють обнадійливі результати, особливо в лікуванні рідкісних або резистентних форм раку.
             </p>
@@ -52,29 +59,14 @@
             </p>   
         </section>
 
-        <img src="images/me.png" alt="My super acurate photo" title="UltraHD">
-
+        <section class="news_cell">
+        <h2 class="article">НАДЗВИЧАЙНО ВАЖЛИВО! </h2>
+        <p> <time datetime="2023-08-25" class="uncommon_text">25 серпня 2023</time> </p>
+        <hr>
+            <img src="images/me.png" alt="My super acurate photo" title="UltraHD">
+        </section>
+        
     </div>
-
-
-
 
 </body>
 </html>
-
-<!-- тег : <img> атрибути - height, vspace, class, hspace, 
-тег : <map> атрибути - , coords, style, tabindex, shape, onblur; 
-тег : <area> атрибути - onblur, , accesskey, lang, onfocus; 
-тег : <style> атрибути - lang, media; 
-тег : <del> атрибути - , lang, id; 
-тег : <ins> атрибути - id, class, ; 
-тег : <sub> атрибути - id, lang, class; 
-тег : <sup> атрибути - id, ; 
-тег : <bdo> атрибути - lang; 
-тег : <span> атрибути - id, class; 
-тег : <div> атрибути - id, style; 
-тег : <footer> атрибути - id, class; 
-тег : <aside> атрибути - id, style; 
-тег : <header> атрибути - id; 
-тег : <rp> атрибути - style; 
-тег : <rt> атрибути - class, id; -->
