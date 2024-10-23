@@ -1,4 +1,5 @@
 /* MAIN */
+html,body { height:100%; }
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ body {
   padding: 30px 50px;
 	margin: 0 auto ;
 	width: 80%;
+  min-height: calc(100% - 134px);
 }
 
 /* GENERAL */
@@ -135,7 +137,7 @@ body {
 .nav a {
   border: 0;
   height: 60%;
-  width: calc(100% / 4);
+  width: calc(100% / 5);
   padding: 10px 0;
   background-color: rgb(110, 164, 92);
 
@@ -176,110 +178,3 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/*
-Селектори, псевдокласи та псевдоелементи:
-Селектори - класів, 
-Селектори - ідендифікаторів;
- Селектори - сусідів, 
- Селектори - контексний(спадкоємців);
-  Селектори - атрибутів:[attr] , 
-  Селектори - атрибутів:[attr ~=value] , 
-  Селектори - атрибутів:[attr|=value] ; 
-  Псевдокласи::first-child, 
-  Псевдокласи::disabled, 
-  Псевдокласи::not(selector), 
-  Псевдокласи::active , 
-  Псевдокласи::checked, 
-  Псевдокласи::link , 
-  Псевдокласи::empty; 
-  Псевдоелементи ::first-line, 
-  Псевдоелементи ::after; 
-  !important; 
-  Границі, 
-
-  заповнювачі і рамки:
-  margin-left:<розмір>, 
-  margin-left:<процент> , 
-  margin-right:<розмір>, 
-  margin-right:<процент> , 
-  margin-top:<розмір>, 
-  margin-top:<процент> ; 
-  padding-left:<розмір>, 
-  padding: <розмір>, 
-  padding-top:<розмір>; 
-  border-left-width:thin , 
-  border-left-width: <розмір>, 
-  border- top-width:thin ,
-  border-top-width: <розмір>, 
-  border-width:thin , 
-  border-width: <розмір>; 
-  border-color:<колір>, 
-  border-top-color:<колір>, 
-  border-bottom-color:<колір>; 
-  border-left-style:none, 
-  border-left-style: double, 
-  border-left-style: groove, 
-  border-left-style: outset, 
-  border- top-style:none, 
-  border- top-style: double, 
-  border- top-style: groove, 
-  border- top-style: outset, 
-  border-right-style:none, 
-  border-right-style: double, 
-  border-right-style: groove, 
-  border-right-style: outset; 
-
-  Позиціювання елементiв:
-  display: inline, 
-  display: table, 
-  display: table-caption, 
-  display: table-row, 
-  display: run-in, 
-  display: table-footer-group; 
-  position: static, 
-  position: relative; 
-  z-index: auto; 
-  float: left, 
-  float: none; 
-  clear: none, 
-  clear: left;
-   direction: ltr; 
-   unicode-bidi: normal, 
-   unicode-bidi: bidi-override; 
-   Візуалізація елементiв:
-   max-width, 
-   width; 
-   height: <розмір>, 
-   height: <процент>, 
-   min-height: <розмір>, 
-   min-height: <процент>; 
-   line-height: normal, 
-   line-height: <розмір>; 
-   vertical-align: baseline, 
-   vertical-align: bottom, 
-   vertical-align: text-top, 
-   vertical-align: <розмір>; 
-   overflow: visible, 
-   overflow: scroll; 
-   clip: rect(<top>,<right>,<bottom>,<left>); 
-   visibility: visible, 
-   visibility: hidden; 
-   outline-style, outline; 
-   Колір фон:color: <колір>; 
-   background-color: <колір>; 
-   background-image: <uri>; 
-   background-attachment: scroll; 
-   background-position: <розмір> {1,2}, 
-   background-position: left, 
-   background-position: center;
-   */

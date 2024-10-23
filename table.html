@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Гаваньо Дмитро Васильович">
+    <meta name="Description" content="Web-сторiнка автора.">   
+    <title>Super website</title>
+
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;text-align:left;vertical-align:top}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal; text-align:left;vertical-align:top }
+        </style>
+
+
+    <link rel="stylesheet" href="css/mycss.css">
+</head>
+<script src="js/myscript.js"></script>
+<body>
+    
+		<!-- Navigation menu -->
+		<div class="nav">
+			<a href="index.html">ПРО МЕНЕ</a>
+			<a href="company.html" class="btn">АПТЕКА</a>
+			<a href="news.html">НОВИНИ</a>
+			<a href="lists.html">РЕСУРСИ</a>
+            <a href="table.html">АССОРТИМЕНТ</a>
+		</div>	
+
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- Title -->
+        <h2 id="Title"> <strong> Ассортимент</strong> </h2>
+        <hr>
+        
+
+        <table class="tg" title="Main Table" lang="uk">
+            <caption id = "$1" title="tableTitle">Ресурсна база</caption>
+            <thead> 
+              <tr id = "$2" title="HeadColumn" lang="uk" dir="ltr">
+                <th title="Starting cell" align="left" width = "20px" bgcolor="#dfdfdf">№</th>
+                <th colspan="4">Назва товару</th>
+                <th rowspan="3">Ціна</th>
+                <th colspan="2">Кількість</th>
+                <th rowspan="3">Категорія</th>
+              </tr>
+              <tr>
+                <th rowspan="2">ID</th>
+                <th rowspan="2">Назва</th>
+                <th rowspan="2">Виробник</th>
+                <th colspan="2">Додаткові відомості</th>
+                <th rowspan="2">В наявності</th>
+                <th rowspan="2">Замовлено</th>
+              </tr>
+              <tr>
+                <th>Опис</th>
+                <th>Форма випуску</th>
+              </tr>
+            </thead>
+            <tbody>
+                <colgroup>
+                    <col span="1" style="background-color:rgb(181, 181, 181)">
+                    <col style="background-color:rgb(232, 232, 232)">
+                  </colgroup>
+              <tr>
+                <td rowspan="3" class="definetlyNotUselessClass" title="firstProduct">1</td>
+                <td>Парацетамол</td>
+                <td colspan="3">Фарма ЛТД</td>
+                <td>50 грн</td>
+                <td colspan="2">30 упаковок</td>
+                <td rowspan="3">Анальгетики</td>
+              </tr>
+              <tr>
+                <td>ID123</td>
+                <td>Знеболювальне, жарознижувальне</td>
+                <td colspan="2">Таблетки</td>
+                <td>20 грн</td>
+                <td>50 шт</td>
+                <td>5 шт</td>
+              </tr>
+              <tr>
+                <td>ID124</td>
+                <td>Жарознижувальне для дітей</td>
+                <td>Сироп</td>
+                <td>90 мл</td>
+                <td>45 грн</td>
+                <td>25 шт</td>
+                <td>8 шт</td>
+              </tr>
+              <tr>
+                <td rowspan="3">2</td>
+                <td>Аспірин</td>
+                <td colspan="3">Bayer AG</td>
+                <td>40 грн</td>
+                <td colspan="2">20 упаковок</td>
+                <td rowspan="3">Анальгетики</td>
+              </tr>
+              <tr>
+                <td>ID125</td>
+                <td>Протизапальне, жарознижувальне</td>
+                <td colspan="2">Таблетки</td>
+                <td>25 грн</td>
+                <td>40 шт</td>
+                <td>10 шт</td>
+              </tr>
+              <tr>
+                <td>ID126</td>
+                <td>Знеболювальне</td>
+                <td>Таблетки</td>
+                <td>80 мг</td>
+                <td>35 грн</td>
+                <td>30 шт</td>
+                <td>7 шт</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Амброксол</td>
+                <td>Український виробник</td>
+                <td>Протизастійне</td>
+                <td>Сироп</td>
+                <td>80 грн</td>
+                <td>15 шт</td>
+                <td>5 шт</td>
+                <td>Протизастійні</td>
+              </tr>
+              <tfoot>
+                <tr>
+                    <td></td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>430 грн</td>
+                    <td>235 шт</td>
+                    <td>45 шт</td>
+                    <td>---</td>
+                  </tr>
+              </tfoot>
+              
+            </tbody>
+          </table>
+          
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+</body>
+</html>
