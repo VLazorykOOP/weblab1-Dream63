@@ -137,11 +137,11 @@ body {
 .nav a {
   border: 0;
   height: 60%;
-  width: calc(100% / 5);
+  width: calc(100% / 7);
   padding: 10px 0;
   background-color: rgb(110, 164, 92);
 
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   color: #fff;
