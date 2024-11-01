@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Гаваньо Дмитро Васильович">
+    <meta name="Description" content="Web-сторiнка автора.">   
+    <title>Super website</title>
+
+    <link rel="stylesheet" href="css/mycss.css">
+</head>
+<script src="js/myscript.js"></script>
+<body>
+    
+		<!-- Navigation menu -->
+        <div class="nav">
+			<a href="index.html">ПРО МЕНЕ</a>
+			<a href="company.html" class="btn">АПТЕКА</a>
+			<a href="news.html">НОВИНИ</a>
+			<a href="lists.html">РЕСУРСИ</a>
+            <a href="table.html">АССОРТИМЕНТ</a>
+			<a href="forms.html">ФОРМИ</a>
+            <a href="svgPage.html">SVG</a>
+            <a href="canvas.html">CANVAS</a>
+		</div>
+
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- Title -->
+        <h2 id="Title"> <strong> Ресурси аптеки</strong> </h2>
+        <hr>
+
+        <canvas id="canvas" width="600" height="400"></canvas>
+        <script>
+            const canvas = document.getElementById("canvas");
+            const ctx = canvas.getContext("2d");
+    
+            // Variables for animated elements
+            let circleColor = "blue";
+            let rectX = 300;
+            let rectY = 50;
+            let angle = 0;
+            let colorChangeTimer = 0;
+    
+            // Smooth movement variables
+            let targetX = 500;
+            const moveSpeed = 2;
+    
+            // Smooth size change variables for animated rectangle
+            let rectWidth = 50;
+            let rectHeight = 50;
+            let targetWidth = 1;
+            let targetHeight = 100;
+            const sizeChangeSpeed = 1;
+    
+            function updatePosition() {
+                if (rectX < targetX) {
+                    rectX = Math.min(rectX + moveSpeed, targetX);
+                } else if (rectX > targetX) {
+                    rectX = Math.max(rectX - moveSpeed, targetX);
+                }
+    
+                if (rectX === targetX) {
+                    targetX = (targetX === 500) ? 100 : 500;
+                }
+            }
+    
+            function updateSize() {
+                // Gradually change width
+                if (rectWidth < targetWidth) {
+                    rectWidth = Math.min(rectWidth + sizeChangeSpeed, targetWidth);
+                } else if (rectWidth > targetWidth) {
+                    rectWidth = Math.max(rectWidth - sizeChangeSpeed, targetWidth);
+                }
+    
+                // Gradually change height
+                if (rectHeight < targetHeight) {
+                    rectHeight = Math.min(rectHeight + sizeChangeSpeed, targetHeight);
+                } else if (rectHeight > targetHeight) {
+                    rectHeight = Math.max(rectHeight - sizeChangeSpeed, targetHeight);
+                }
+    
+                // Toggle targets when rectangle reaches the current size
+                if (rectWidth === targetWidth && rectHeight === targetHeight) {
+                    targetWidth = (targetWidth === 50) ? 1 : (targetWidth === 1 ? 75 : 50);
+                    targetHeight = (targetHeight === 50) ? 100 : (targetHeight === 100 ? 1 : 50);
+                }
+            }
+    
+            function animate() {
+                // Clear the canvas on every frame
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+                // Draw Border
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 5;
+                ctx.globalAlpha = 0.5;
+                ctx.strokeRect(0, 0, 600, 400);
+                ctx.globalAlpha = 1.0;
+    
+                // Draw Static Lines
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(10, 200);
+                ctx.lineTo(610, 200);
+                ctx.stroke();
+    
+                ctx.beginPath();
+                ctx.moveTo(200, 20);
+                ctx.lineTo(200, 420);
+                ctx.stroke();
+    
+                // Update color of animated circle
+                if (colorChangeTimer >= 60) {
+                    circleColor = circleColor === "blue" ? "green" : circleColor === "green" ? "red" : "blue";
+                    colorChangeTimer = 0;
+                }
+                colorChangeTimer++;
+    
+                // Draw Animated Circle
+                drawCircle(300, 150, 50, circleColor);
+    
+                // Draw Static Circles
+                drawCircle(400, 150, 50, "blue");
+                drawCircle(300, 250, 50, "blue");
+    
+                // Update position of moving rectangle
+                updatePosition();
+    
+                // Draw Moving Rectangle
+                drawRectangle(rectX, rectY, 100, 50, "blue");
+    
+                // Draw Static Rectangles
+                drawRectangle(200, 100, 50, 50, "blue");
+                drawRectangle(400, 200, 50, 50, "blue");
+                drawRectangle(200, 250, 50, 50, "blue");
+    
+                // Update size of animated rectangle
+                updateSize();
+    
+                // Draw Animated Rectangle (Width and Height)
+                drawRectangle(350, 250, rectWidth, rectHeight, "blue");
+    
+                // Update and animate rotation
+                ctx.save();
+                ctx.translate(475, 125);
+                ctx.rotate(angle * Math.PI / 180);
+                drawRectangle(-25, -25, 50, 50, "blue");
+                ctx.restore();
+                angle = (angle + 5) % 360;
+    
+                // Schedule the next frame
+                requestAnimationFrame(animate);
+            }
+    
+            function drawCircle(x, y, radius, color) {
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, 2 * Math.PI);
+                ctx.fillStyle = color;
+                ctx.fill();
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            }
+    
+            function drawRectangle(x, y, width, height, color) {
+                ctx.fillStyle = color;
+                ctx.fillRect(x, y, width, height);
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 2;
+                ctx.strokeRect(x, y, width, height);
+            }
+    
+            // Start the animation loop
+            animate();
+        </script>
+
+
+        
+    </div>
+
+</body>
+</html>
