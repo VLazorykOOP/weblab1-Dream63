@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Гаваньо Дмитро Васильович">
+    <meta name="Description" content="Web-сторiнка автора.">   
+    <title>Super website</title>
+
+    <link rel="stylesheet" href="css/mycss.css">
+</head>
+<script src="js/myscript.js"></script>
+<body>
+    
+		<!-- Navigation menu -->
+		<div class="nav">
+			<a href="index.html">ПРО МЕНЕ</a>
+			<a href="company.html" class="btn">АПТЕКА</a>
+			<a href="news.html">НОВИНИ</a>
+			<a href="lists.html">РЕСУРСИ</a>
+            <a href="table.html">АССОРТИМЕНТ</a>
+		</div>	
+
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- Title -->
+        <h2 id="Title"> <strong> Ресурси аптеки</strong> </h2>
+        <hr>
+
+        <!-- Page content -->
+        <svg version = "1.1"
+            baseProfile="full"
+            xmlns = "http://www.w3.org/2000/svg"
+            xmlns:xlink = "http://www.w3.org/1999/xlink"
+            xmlns:ev = "http://www.w3.org/2001/xml-events"
+            height = "400px" width = "600px">
+
+            <rect x="0" y="0" width="600" height="400" fill="none" stroke="black" stroke-width="5px" stroke-opacity="0.5"/>
+            <line x1="10" y1="200" x2="610" y2="200"
+                stroke="black" stroke-width="3" />
+            <line x1="200" y1="20" x2="200" y2="420"
+                stroke="black" stroke-width="3" />
+            <circle cx="300" cy="150" r="50" fill="blue"stroke="black" stroke-width="2"/>
+            <circle cx="400" cy="150" r="50" fill="blue" stroke="black" stroke-width="2"/>
+            <circle cx="300" cy="250" r="50" fill="blue" stroke="black" stroke-width="2"/>
+            <rect x="300" y="50" width="100" height="50" fill="blue"
+                stroke="black" stroke-width="2"/>
+            <rect x="200" y="100" width="50" height="50" fill="blue"
+                stroke="black" stroke-width="2"/>
+            <rect x="450" y="100" width="50" height="50" fill="blue"
+                stroke="black" stroke-width="2"/>
+            <rect x="450" y="250" width="50" height="50" fill="blue" stroke="black" stroke-width="2"/>
+            <rect x="400" y="200" width="50" height="50" fill="blue" stroke="black" stroke-width="2"/>
+            <rect x="350" y="250" width="50" height="50" fill="blue" stroke="black" stroke-width="2"/>
+            <rect x="200" y="250" width="50" height="50" fill="blue" stroke="black" stroke-width="2"/>
+        </svg>
+
+
+        <svg version = "1.1"
+            baseProfile="full"
+            xmlns = "http://www.w3.org/2000/svg"
+            xmlns:xlink = "http://www.w3.org/1999/xlink"
+            xmlns:ev = "http://www.w3.org/2001/xml-events"
+            height = "400px" width = "600px"  >
+
+            <rect   x="0" y="0" width="600" height="400" fill="none" stroke="black" stroke-width="5px" stroke-opacity="0.5"/>
+            <line x1="10" y1="200" x2="610" y2="200"
+                stroke="black" stroke-width="3" />
+            <line x1="200" y1="20" x2="200" y2="420"
+                stroke="black" stroke-width="3" />
+
+
+                
+            <circle cx="300" cy="150" r="50" fill="blue"stroke="black" stroke-width="2">
+                <animate attributeName="fill" values="blue; green; red; blue" dur="5s" repeatCount="indefinite"/>
+            </circle>
+            -<circle cx="400" cy="150" r="50" fill="blue" stroke="black" stroke-width="2"></circle>
+            -<circle cx="300" cy="250" r="50" fill="blue" stroke="black" stroke-width="2"></circle>
+
+            <rect x="300" y="50" width="100" height="50" fill="blue" stroke="black" stroke-width="2">
+                <animate attributeName="x" values="300; 500; 100; 300" dur="5s" repeatCount="indefinite"/>
+            </rect>
+            -<rect x="200" y="100" width="50" height="50" fill="blue" stroke="black" stroke-width="2"></rect>
+            <rect x="450" y="100" width="50" height="50" fill="blue" stroke="black" stroke-width="2">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 475 125" to="360 475 125" dur="0.1s" repeatCount="indefinite" />
+            </rect>
+            <rect x="450" y="250" width="50" height="50" fill="blue" stroke="black" stroke-width="2">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 450 250" to="360 350 150" dur="4s" repeatCount="indefinite" />
+            </rect>
+            -<rect x="400" y="200" width="50" height="50" fill="blue" stroke="black" stroke-width="2"></rect>
+            <rect x="350" y="250" width="50" height="50" fill="blue" stroke="black" stroke-width="2">
+                <animate attributeName="width" values="50; 1; 75; 50" dur="3s" repeatCount="indefinite"/>
+                <animate attributeName="height" values="50; 100; 1; 50" dur="3s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="200" y="250" width="50" height="50" fill="blue" stroke="black" stroke-width="2">
+
+            </rect>
+        </svg>
+
+        
+    </div>
+
+</body>
+</html>
